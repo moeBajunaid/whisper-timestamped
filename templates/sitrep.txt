@@ -1,0 +1,9 @@
+Sitrep from {{ callsign1 }} to {{ callsign2}}
+
+Enemy: {{ enemy }}
+
+Friendly Situation: {{ friendly }}
+
+Admin Plan or Requirements: {{ admin }}
+
+General: {{ other }}
