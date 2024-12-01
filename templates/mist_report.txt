@@ -1,0 +1,10 @@
+Mist Report from {{ callsign1 }} to {{ callsign2}}
+
+Mechanism: {{ mechanism }}
+
+Injury: {{ injury }}
+
+Status / Symptoms: {{ status_symptoms }} 
+
+
+Treatment: {{ treatment }}

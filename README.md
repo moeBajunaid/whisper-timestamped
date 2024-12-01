@@ -1,6 +1,25 @@
+# HackFD Logbook Digitization
+
+Goal of project was to use a speech to text model that can take typical radio traffic, and generate a corresponding relevant report that the information would be written in. It currently has been tested only with the sitrep and contact report formats where "correct" voice procedure was followed.
+
+To run the project, the dependencies in the requirements.txt file need to be installed.
+
+running: "python3 setup.py install" with the project cloned should install the majority of them. 
+
+Once dependencies are resolved, the gui for the project can be launched with the following command while in the project folder directory:
+python3 gui_test.py
+
+Through the gui, the current implementation works for the audio file transcription tab where it will prompt you to select the audio file to transcribe from and the type of model to use for the transcription. It currently only uses the turbo model which has high accuracy but takes the longest to run despite option chosen in the dropbox.
+
+Once the model completes running, it will print to the screen the corresponding report format (if already implemented) and also generate a .txt file that has the info in that format.
+
+
+
+-----------------Original ReadMe from Project Forked Below----------------------
+
+
 # whisper-timestamped
-Mo was here!
-Jul is here...
+
 Multilingual Automatic Speech Recognition with word-level timestamps and confidence.
 
 * [Description](#description)

@@ -1,0 +1,27 @@
+9-Liner from {{ callsign1 }} to {{ callsign2}}
+
+Location Grid: {{ gridLocation }}
+
+
+CallSign & frequency: {{ callsignAndFreq }}
+
+
+Number of Patients and Priority: {{ patientsAndPriority }}
+
+
+Special Equipment Required: {{ specialEquipment }}
+
+
+Number Carried, Lying or Sitting: {{ patientPosition }}
+
+
+Security at pickup zone: {{ pzSecurity }}
+
+
+Pickup Zone Marking: {{ pzMarking }}
+
+
+Number of Patients by nationality and Status: {{ patientStatusOrigin }} 
+
+
+Pickup Zone Terrain Obstacles: {{ pzObstacles }} 

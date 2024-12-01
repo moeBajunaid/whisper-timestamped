@@ -1,0 +1,13 @@
+Contact Report from {{ callsign1 }} to {{ callsign2}}
+
+Time Of Contact: {{ contactTime }}
+
+Enemy Location: {{ enemyLocation }}
+
+Observer Location: {{ observerLocation }}
+
+Description of Target: {{ targetDescription }}
+
+Enemy Action: {{ enemyAction }}
+
+Own Action: {{ ownAction }}

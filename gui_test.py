@@ -28,14 +28,24 @@ def main():
 
     try:
         # Call whisper_test.py and capture its output
-        command = "python whisper_test.py {audio_path}"
-        result = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-        transcribed_text = result.stdout
-        #display_results(result.stdout)
-        stdout, stderr = result.communicate()
-        args.output = stdout
-        print(audio_path)
-        print(f"Transcribed Text: {stdout}")
+        
+        command = ["python3","test_whisper.py",audio_path]
+       
+        result = subprocess.Popen(command, 
+        stdout=subprocess.PIPE,
+        stdin=subprocess.PIPE,
+        stderr=subprocess.STDOUT)
+        
+        print("location of selected audio file: " + audio_path)
+        resultingOutput = []
+        for line in result.stdout:
+            resultingOutput.append(line.decode('utf-8'))
+        
+        allText = "\n".join(resultingOutput)
+        squareBracketIndex = allText.rindex(']')
+        print(allText[squareBracketIndex+1:])
+        result.wait()
+       
     except subprocess.TimeoutExpired:
         print("Error: whisper_test.py timed out.")
     except subprocess.CalledProcessError as e:
